@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a3d5ff;
+}
+.pomodoro-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0 5rem 0;
+  font-size: 18px;
+
+}
+
+.about {
+  width: 500px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.how-to-use-it {
+  width: 500px;
+  margin-left: 4rem;
+  line-height: 1.3;
+}
+
+.how-to-use-it p {
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.pomo-image {
+  margin-bottom: 1rem;
+}
+
+.lengths {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.length-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto 1rem auto;
+  border: 5px solid grey;
+  border-radius: 50px;
+  width: 300px;
+  padding: 20px 50px 20px 50px;
+}
+.session h4 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.session div {
+  font-size: 40px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  cursor: pointer; 
+  
+}
+
+.play-pause {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
+
+.fa-special {
+  margin: 0 10px 0 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+  line-height: 1.5;
+}
