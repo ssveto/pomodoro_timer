@@ -29,28 +29,19 @@ function App() {
   }, [seconds, minutes, isRunning]);
 
   if (minutes === 0 && seconds === 0) {
-    notification.play()
+    notification.play();
     setTimeout(() => {
       if (!round) {
         setRound(true);
         setMinutes(pause);
         setIsRunning(true);
-        
-  
       } else {
         setRound(false);
         setMinutes(session);
         setIsRunning(true);
-        
       }
     }, "1000");
-    
-    
-
   }
-
-
-
 
   const startAndStop = () => {
     setIsRunning(!isRunning);
@@ -64,10 +55,7 @@ function App() {
     setSeconds("0");
     notification.pause();
     notification.src = alarmSound;
-    
   };
-
-  
 
   return (
     <>
@@ -155,7 +143,7 @@ function App() {
           <div className="session" id="timer-label">
             {round ? <h4>Break</h4> : <h4>Session</h4>}
             <audio id="beep" src={alarmSound}></audio>
-            
+
             <div className="main-session" id="time-left">
               {minutes > 9 ? minutes : "0" + minutes}:
               {seconds > 9 ? seconds : "0" + seconds}
